@@ -1,0 +1,1 @@
+- Aplikace využívá Qt verze 5.9
