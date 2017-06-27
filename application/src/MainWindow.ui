@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>800</width>
-    <height>622</height>
+    <height>588</height>
    </rect>
   </property>
   <property name="minimumSize">
@@ -24,8 +24,60 @@
   </property>
   <widget class="QWidget" name="centralWidget">
    <layout class="QGridLayout" name="gridLayout">
+    <item row="2" column="2">
+     <widget class="QWidget" name="wid_segmentionControl" native="true">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>0</height>
+       </size>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <widget class="QPushButton" name="btn_segmentationStart">
+         <property name="text">
+          <string>START</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="btn_segmentationStop">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="text">
+          <string>STOP</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+      <zorder>btn_segmentationStop</zorder>
+      <zorder>btn_segmentationStart</zorder>
+     </widget>
+    </item>
     <item row="0" column="2">
-     <widget class="QWidget" name="widget" native="true">
+     <widget class="QWidget" name="wid_regionControl" native="true">
       <property name="sizePolicy">
        <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
         <horstretch>0</horstretch>
@@ -46,10 +98,10 @@
         <number>0</number>
        </property>
        <item row="1" column="4">
-        <widget class="QSpinBox" name="spinBox_2"/>
+        <widget class="QSpinBox" name="sb_regionY"/>
        </item>
        <item row="1" column="1">
-        <widget class="QLabel" name="label_3">
+        <widget class="QLabel" name="lab_y">
          <property name="text">
           <string>Y</string>
          </property>
@@ -59,7 +111,7 @@
         </widget>
        </item>
        <item row="1" column="7">
-        <widget class="QLabel" name="label_5">
+        <widget class="QLabel" name="lab_height">
          <property name="sizePolicy">
           <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
            <horstretch>0</horstretch>
@@ -75,13 +127,13 @@
         </widget>
        </item>
        <item row="1" column="8">
-        <widget class="QSpinBox" name="spinBox_4"/>
+        <widget class="QSpinBox" name="sb_regionHeight"/>
        </item>
        <item row="0" column="8">
-        <widget class="QSpinBox" name="spinBox_3"/>
+        <widget class="QSpinBox" name="sb_regionWidth"/>
        </item>
        <item row="0" column="7">
-        <widget class="QLabel" name="label_4">
+        <widget class="QLabel" name="lab_width">
          <property name="sizePolicy">
           <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
            <horstretch>0</horstretch>
@@ -97,7 +149,7 @@
         </widget>
        </item>
        <item row="0" column="1">
-        <widget class="QLabel" name="label_2">
+        <widget class="QLabel" name="lab_x">
          <property name="sizePolicy">
           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
            <horstretch>0</horstretch>
@@ -113,7 +165,7 @@
         </widget>
        </item>
        <item row="0" column="4">
-        <widget class="QSpinBox" name="spinBox">
+        <widget class="QSpinBox" name="sb_regionX">
          <property name="sizePolicy">
           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
            <horstretch>0</horstretch>
@@ -123,7 +175,7 @@
         </widget>
        </item>
        <item row="0" column="0">
-        <widget class="QPushButton" name="pushButton_2">
+        <widget class="QPushButton" name="btn_addRegion">
          <property name="sizePolicy">
           <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
            <horstretch>0</horstretch>
@@ -136,7 +188,7 @@
         </widget>
        </item>
        <item row="1" column="0">
-        <widget class="QPushButton" name="pushButton_3">
+        <widget class="QPushButton" name="btn_removeRegion">
          <property name="sizePolicy">
           <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
            <horstretch>0</horstretch>
@@ -151,41 +203,8 @@
       </layout>
      </widget>
     </item>
-    <item row="4" column="0">
-     <widget class="QListView" name="listView">
-      <property name="sizePolicy">
-       <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
-        <horstretch>0</horstretch>
-        <verstretch>0</verstretch>
-       </sizepolicy>
-      </property>
-      <property name="maximumSize">
-       <size>
-        <width>16777215</width>
-        <height>100</height>
-       </size>
-      </property>
-     </widget>
-    </item>
-    <item row="2" column="2">
-     <widget class="QPushButton" name="pushButton">
-      <property name="text">
-       <string>START SEGMENTATION</string>
-      </property>
-     </widget>
-    </item>
-    <item row="0" column="0" rowspan="4">
-     <widget class="QLabel" name="label">
-      <property name="frameShape">
-       <enum>QFrame::Box</enum>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-     </widget>
-    </item>
     <item row="1" column="2">
-     <widget class="QTableView" name="tableView">
+     <widget class="QTableView" name="tw_regionView">
       <property name="sizePolicy">
        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
         <horstretch>0</horstretch>
@@ -206,7 +225,33 @@
       </property>
      </widget>
     </item>
-    <item row="3" column="2" rowspan="2">
+    <item row="5" column="0">
+     <widget class="QListView" name="lw_logView">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>100</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="0" rowspan="5">
+     <widget class="QLabel" name="lab_mainImage">
+      <property name="frameShape">
+       <enum>QFrame::Box</enum>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="2" rowspan="3">
      <widget class="QScrollArea" name="scrollArea">
       <property name="sizePolicy">
        <sizepolicy hsizetype="Fixed" vsizetype="Expanding">
@@ -229,18 +274,18 @@
       <property name="alignment">
        <set>Qt::AlignHCenter|Qt::AlignTop</set>
       </property>
-      <widget class="QWidget" name="scrollAreaWidgetContents">
+      <widget class="QWidget" name="scrollArea_DisntaceWidges">
        <property name="geometry">
         <rect>
          <x>0</x>
          <y>0</y>
          <width>233</width>
-         <height>460</height>
+         <height>403</height>
         </rect>
        </property>
        <layout class="QVBoxLayout" name="verticalLayout">
         <item alignment="Qt::AlignTop">
-         <widget class="QWidget" name="widget_3" native="true">
+         <widget class="QWidget" name="wid_euclidean" native="true">
           <property name="sizePolicy">
            <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
             <horstretch>0</horstretch>
@@ -269,61 +314,25 @@
            <property name="bottomMargin">
             <number>12</number>
            </property>
-           <item row="1" column="0">
-            <widget class="QCheckBox" name="checkBox_2">
-             <property name="text">
-              <string>Active</string>
-             </property>
-            </widget>
-           </item>
-           <item row="6" column="0" colspan="3">
-            <widget class="QSlider" name="horizontalSlider_2">
-             <property name="value">
-              <number>50</number>
-             </property>
+           <item row="8" column="0" colspan="3">
+            <widget class="Line" name="line">
              <property name="orientation">
               <enum>Qt::Horizontal</enum>
              </property>
             </widget>
            </item>
-           <item row="1" column="1">
-            <widget class="QLabel" name="label_10">
-             <property name="sizePolicy">
-              <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
-               <horstretch>0</horstretch>
-               <verstretch>0</verstretch>
-              </sizepolicy>
-             </property>
-             <property name="text">
-              <string>T:</string>
-             </property>
-            </widget>
-           </item>
-           <item row="1" column="2">
-            <widget class="QDoubleSpinBox" name="doubleSpinBox_2"/>
-           </item>
            <item row="7" column="1" colspan="2">
-            <widget class="QComboBox" name="comboBox_2">
+            <widget class="QComboBox" name="combo_euclideanAlgorithm">
              <property name="maxVisibleItems">
               <number>2</number>
              </property>
             </widget>
            </item>
-           <item row="7" column="0">
-            <widget class="QLabel" name="label_11">
-             <property name="sizePolicy">
-              <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
-               <horstretch>0</horstretch>
-               <verstretch>0</verstretch>
-              </sizepolicy>
-             </property>
-             <property name="text">
-              <string>Algorithm</string>
-             </property>
-            </widget>
+           <item row="1" column="2">
+            <widget class="QDoubleSpinBox" name="dsb_euclideadnThreshold"/>
            </item>
            <item row="0" column="0" colspan="3">
-            <widget class="QLabel" name="label_9">
+            <widget class="QLabel" name="lab_euclideadnDistance">
              <property name="sizePolicy">
               <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
                <horstretch>0</horstretch>
@@ -350,8 +359,44 @@
              </property>
             </widget>
            </item>
-           <item row="8" column="0" colspan="3">
-            <widget class="Line" name="line">
+           <item row="7" column="0">
+            <widget class="QLabel" name="lab_euclideanAlgorithm">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="text">
+              <string>Algorithm</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="1">
+            <widget class="QLabel" name="lab_euclideanT">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="text">
+              <string>T:</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="0">
+            <widget class="QCheckBox" name="cb_euclideanActive">
+             <property name="text">
+              <string>Active</string>
+             </property>
+            </widget>
+           </item>
+           <item row="6" column="0" colspan="3">
+            <widget class="QSlider" name="hslid_euclideadnThreshold">
+             <property name="value">
+              <number>50</number>
+             </property>
              <property name="orientation">
               <enum>Qt::Horizontal</enum>
              </property>
@@ -361,7 +406,7 @@
          </widget>
         </item>
         <item alignment="Qt::AlignTop">
-         <widget class="QWidget" name="widget_4" native="true">
+         <widget class="QWidget" name="wid_geodesic" native="true">
           <property name="sizePolicy">
            <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
             <horstretch>0</horstretch>
@@ -391,7 +436,7 @@
             <number>12</number>
            </property>
            <item row="1" column="0">
-            <widget class="QCheckBox" name="checkBox_3">
+            <widget class="QCheckBox" name="cb_geodesicActive">
              <property name="text">
               <string>Active</string>
              </property>
@@ -420,26 +465,10 @@
              </property>
             </widget>
            </item>
-           <item row="1" column="2">
-            <widget class="QDoubleSpinBox" name="doubleSpinBox_3"/>
-           </item>
-           <item row="7" column="1" colspan="2">
-            <widget class="QComboBox" name="comboBox_3">
-             <property name="maxVisibleItems">
-              <number>2</number>
-             </property>
-            </widget>
-           </item>
-           <item row="7" column="0">
-            <widget class="QLabel" name="label_13">
-             <property name="sizePolicy">
-              <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
-               <horstretch>0</horstretch>
-               <verstretch>0</verstretch>
-              </sizepolicy>
-             </property>
-             <property name="text">
-              <string>Algorithm</string>
+           <item row="7" column="0" colspan="3">
+            <widget class="Line" name="line_2">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
              </property>
             </widget>
            </item>
@@ -471,12 +500,8 @@
              </property>
             </widget>
            </item>
-           <item row="8" column="0" colspan="3">
-            <widget class="Line" name="line_2">
-             <property name="orientation">
-              <enum>Qt::Horizontal</enum>
-             </property>
-            </widget>
+           <item row="1" column="2">
+            <widget class="QDoubleSpinBox" name="doubleSpinBox_3"/>
            </item>
           </layout>
          </widget>
@@ -511,12 +536,8 @@
            <property name="bottomMargin">
             <number>12</number>
            </property>
-           <item row="1" column="0">
-            <widget class="QCheckBox" name="checkBox_4">
-             <property name="text">
-              <string>Active</string>
-             </property>
-            </widget>
+           <item row="1" column="2">
+            <widget class="QDoubleSpinBox" name="doubleSpinBox_4"/>
            </item>
            <item row="6" column="0" colspan="3">
             <widget class="QSlider" name="horizontalSlider_4">
@@ -528,39 +549,17 @@
              </property>
             </widget>
            </item>
-           <item row="1" column="1">
-            <widget class="QLabel" name="label_15">
-             <property name="sizePolicy">
-              <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
-               <horstretch>0</horstretch>
-               <verstretch>0</verstretch>
-              </sizepolicy>
-             </property>
+           <item row="1" column="0">
+            <widget class="QCheckBox" name="checkBox_4">
              <property name="text">
-              <string>T:</string>
+              <string>Active</string>
              </property>
             </widget>
            </item>
-           <item row="1" column="2">
-            <widget class="QDoubleSpinBox" name="doubleSpinBox_4"/>
-           </item>
-           <item row="7" column="1" colspan="2">
-            <widget class="QComboBox" name="comboBox_4">
-             <property name="maxVisibleItems">
-              <number>2</number>
-             </property>
-            </widget>
-           </item>
-           <item row="7" column="0">
-            <widget class="QLabel" name="label_16">
-             <property name="sizePolicy">
-              <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
-               <horstretch>0</horstretch>
-               <verstretch>0</verstretch>
-              </sizepolicy>
-             </property>
-             <property name="text">
-              <string>Algorithm</string>
+           <item row="7" column="0" colspan="3">
+            <widget class="Line" name="line_3">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
              </property>
             </widget>
            </item>
@@ -592,10 +591,16 @@
              </property>
             </widget>
            </item>
-           <item row="8" column="0" colspan="3">
-            <widget class="Line" name="line_3">
-             <property name="orientation">
-              <enum>Qt::Horizontal</enum>
+           <item row="1" column="1">
+            <widget class="QLabel" name="label_15">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="text">
+              <string>T:</string>
              </property>
             </widget>
            </item>
@@ -690,9 +695,8 @@
  </widget>
  <layoutdefault spacing="6" margin="11"/>
  <tabstops>
-  <tabstop>pushButton</tabstop>
-  <tabstop>tableView</tabstop>
-  <tabstop>listView</tabstop>
+  <tabstop>tw_regionView</tabstop>
+  <tabstop>lw_logView</tabstop>
   <tabstop>scrollArea</tabstop>
  </tabstops>
  <resources/>
