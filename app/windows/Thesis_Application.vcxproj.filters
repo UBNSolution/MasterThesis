@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\_sources\Main.cpp" />
+    <ClCompile Include="..\_sources\AppCore.cpp">
+      <Filter>Backend</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_sources\RGBVertex.cpp">
+      <Filter>Backend\Graph</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_sources\RGBEdge.cpp">
+      <Filter>Backend\Graph</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_sources\RGBGraph.cpp">
+      <Filter>Backend\Graph</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_sources\SegmentationAlg.cpp">
+      <Filter>Backend\Segmentation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_sources\EuclideanSeedGrow.cpp">
+      <Filter>Backend\Segmentation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_sources\EuclideanClustering.cpp">
+      <Filter>Backend\Segmentation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_sources\ResistanceClustering.cpp">
+      <Filter>Backend\Segmentation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_sources\GeodesicClustering.cpp">
+      <Filter>Backend\Segmentation</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\_sources\Version.h" />
+    <ClInclude Include="..\_sources\AppCore.h">
+      <Filter>Backend</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_sources\RGBVertex.h">
+      <Filter>Backend\Graph</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_sources\RGBEdge.h">
+      <Filter>Backend\Graph</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_sources\RGBGraph.h">
+      <Filter>Backend\Graph</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_sources\SegmentationAlg.h">
+      <Filter>Backend\Segmentation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_sources\EuclideanSeedGrow.h">
+      <Filter>Backend\Segmentation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_sources\EuclideanClustering.h">
+      <Filter>Backend\Segmentation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_sources\ResistanceClustering.h">
+      <Filter>Backend\Segmentation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_sources\GeodesicClustering.h">
+      <Filter>Backend\Segmentation</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Backend">
+      <UniqueIdentifier>{e1b1ea07-967d-478a-80d4-aa5e0b4d9b87}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Backend\Graph">
+      <UniqueIdentifier>{368c1481-53c9-49d8-b1e1-1e54ea86a7d8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Backend\Segmentation">
+      <UniqueIdentifier>{ecca2a20-fd72-4bd2-bdaf-74b81c039088}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="appClassDiagram.cd" />
+  </ItemGroup>
+</Project>

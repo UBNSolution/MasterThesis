@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="EuclideanClustering">
+    <Position X="8.25" Y="0.5" Width="2.25" />
+    <InheritanceLine Type="SegmentationAlg">
+      <InheritanceModifierLabel ManuallyPlaced="true">
+        <Position X="0.152" Y="0.06" />
+      </InheritanceModifierLabel>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAgAAAAAAAAAAAAAAAAAAEAAAAACAAAAAAAAAI=</HashCode>
+      <FileName>C:\SVN\PM\app\sandbox\_users\murban\Masters_Thesis\app\_sources\EuclideanClustering.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EuclideanSeedGrow">
+    <Position X="5.75" Y="0.5" Width="2.25" />
+    <InheritanceLine Type="SegmentationAlg" ManuallyRouted="true">
+      <Path>
+        <Point X="4.125" Y="2.5" />
+        <Point X="4.125" Y="2.103" />
+        <Point X="5.573" Y="2.103" />
+        <Point X="5.573" Y="1.405" />
+        <Point X="5.75" Y="1.405" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAABAAgAAAAAAAAAAAEAAAAAAAAAAAACAAAAAAAAAA=</HashCode>
+      <FileName>C:\SVN\PM\app\sandbox\_users\murban\Masters_Thesis\app\_sources\EuclideanSeedGrow.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GeodesicClustering">
+    <Position X="8.25" Y="3" Width="2.25" />
+    <InheritanceLine Type="SegmentationAlg" FixedFromPoint="true">
+      <Path>
+        <Point X="4.375" Y="6.172" />
+        <Point X="4.375" Y="6.41" />
+        <Point X="5.34" Y="6.41" />
+        <Point X="5.34" Y="2.61" />
+        <Point X="8.01" Y="2.61" />
+        <Point X="8.01" Y="4.227" />
+        <Point X="8.25" Y="4.227" />
+      </Path>
+      <InheritanceModifierLabel ManuallyPlaced="true">
+        <Position X="-0.43" Y="1.339" />
+      </InheritanceModifierLabel>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAABAGAAAAAAAAAAAAAACABAAACAAAA=</HashCode>
+      <FileName>C:\SVN\PM\app\sandbox\_users\murban\Masters_Thesis\app\_sources\GeodesicClustering.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ResistanceClustering">
+    <Position X="5.5" Y="3" Width="2.25" />
+    <InheritanceLine Type="SegmentationAlg" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="3.812" Y="6.172" />
+        <Point X="3.812" Y="6.41" />
+        <Point X="5.34" Y="6.41" />
+        <Point X="5.34" Y="2.61" />
+        <Point X="6.438" Y="2.61" />
+        <Point X="6.438" Y="3" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAQAACIAIAAAAgAAAAIAFAAQAAAACAAAAAACAAA=</HashCode>
+      <FileName>C:\SVN\PM\app\sandbox\_users\murban\Masters_Thesis\app\_sources\ResistanceClustering.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RGBEdge">
+    <Position X="10.75" Y="4" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAEAEAAAAAAAACCBAAAAAAAAAAAAAAAAAAgAAAAAAAA=</HashCode>
+      <FileName>C:\SVN\PM\app\sandbox\_users\murban\Masters_Thesis\app\_sources\RGBEdge.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RGBGraph">
+    <Position X="10.75" Y="0.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AIAAABAAAAAAAAAIAAAAAABABAIAAAAgAAAAAEAAAiE=</HashCode>
+      <FileName>C:\SVN\PM\app\sandbox\_users\murban\Masters_Thesis\app\_sources\RGBGraph.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RGBVertex">
+    <Position X="13.25" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAUAgAIAAAACAgAAAAAwAAQAQAAAFwAAYAABCgEAQQA=</HashCode>
+      <FileName>C:\SVN\PM\app\sandbox\_users\murban\Masters_Thesis\app\_sources\RGBVertex.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SegmentationAlg">
+    <Position X="3.25" Y="2.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>gAAAAAAADACABAQAAAEAAIQAAAAACAAgiAAAAAAAAAA=</HashCode>
+      <FileName>C:\SVN\PM\app\sandbox\_users\murban\Masters_Thesis\app\_sources\SegmentationAlg.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AppCore">
+    <Position X="0.5" Y="0.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>iIBAAAIgAAAoAgCwAAAAkCAADAAAAAAoAQBIEAggYCA=</HashCode>
+      <FileName>C:\SVN\PM\app\sandbox\_users\murban\Masters_Thesis\app\_sources\AppCore.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="eSegmAlgOption">
+    <Position X="3.25" Y="0.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAQAAAAAAAAAAAAAEAAAAAAAAAAAAQAAAgAAAAA=</HashCode>
+      <FileName>C:\SVN\PM\app\sandbox\_users\murban\Masters_Thesis\app\_sources\SegmentationAlg.h</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

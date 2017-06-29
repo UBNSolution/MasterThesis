@@ -1,0 +1,25 @@
+MAKEFILE := $(abspath $(lastword $(MAKEFILE_LIST)))
+MAKEFILE_DIR := $(abspath $(dir $(MAKEFILE)))
+# Makefile is currently stored in Master_Thesis/app/linux
+PRJ_ROOT := $(abspath $(MAKEFILE_DIR))
+
+################################################################################
+
+PLATFORM_ARCH := $(shell uname -m)
+ARCH := i686
+
+ifeq ($(PLATFORM_ARCH),i686)
+  CXX_$(ARCH) := g++
+  CXXFLAGS_$(ARCH) :=
+  LDFLAGS_$(ARCH) :=
+else
+  ifeq ($(PLATFORM_ARCH),x86_64)
+    CXX_$(ARCH) := g++
+    CXXFLAGS_$(ARCH) := -m32
+    LDFLAGS_$(ARCH) := -m32
+  endif
+endif
+
+################################################################################
+
+include $(MAKEFILE_DIR)/Makefile
